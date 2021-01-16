@@ -5,7 +5,6 @@ module.exports = {
         preserveHtmlElements: false,
         content: [
             './public/**/*.html',
-            './public/**/*.js'
         ]
     },
     darkMode: 'media', // or 'media' or 'class'
