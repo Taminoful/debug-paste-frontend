@@ -23,10 +23,10 @@
   </head>
   <body class="flex flex-col min-h-screen bg-eldoria-background">
 
-    <header class="flex justify-center bg-eldoria-header text-white h-24">
+    <header class="flex justify-center bg-eldoria-header text-white p-8">
       <div class="flex flex-col self-center">
-        <h1 class="flex flex-row place-self-center font-semibold text-4xl mb-2">{{ title }}</h1>
-        <h2 class="flex flex-row place-self-center">Report ID: {{ reportId }}</h2>
+        <h1 class="place-self-center font-semibold text-2xl sm:text-4xl mb-2">{{ title }}</h1>
+        <h2 class="place-self-center break-all sm:break-normal">Report ID: {{ reportId }}</h2>
       </div>
     </header>
 
@@ -38,13 +38,13 @@
             <h3 class="text-xl">{{ contentTitle }}</h3>
           </summary>
 
-          <pre class="whitespace-pre-wrap bg-eldoria-input p-2">{{ content }}</pre>
+          <pre class="whitespace-pre-wrap bg-eldoria-input break-all sm:break-normal p-2">{{ content }}</pre>
         </details>
       </section>
 
-      </main>
+    </main>
 
-    <footer class="flex flex-wrap bg-eldoria-header text-white p-8">
+    <footer class="flex flex-wrap bg-eldoria-header text-white p-8 mt-6">
 
       <figure class="flex w-full place-content-center md:w-1/3 md:place-content-start" role="figure">
         <a href="https://github.com/EldoriaRPG" target="_blank" rel="nofollow noopener">
@@ -66,5 +66,6 @@
 
     </footer>
 
+    <script></script>
   </body>
 </html>
