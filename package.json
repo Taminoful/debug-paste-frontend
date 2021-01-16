@@ -1,7 +1,7 @@
 {
   "name": "@taminoful/debug-paste-frontend",
   "description": "A simple semantic website frontend for debug pastes.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "keywords": [
     "debug",
     "semantic",
@@ -27,12 +27,13 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1"
   },
   "scripts": {
-    "build": "npx tailwindcss build ./css/tailwind.css -o ./public/build/tailwind.css",
-    "build prod": "postcss build ./css/tailwind.css -o ./public/build/tailwind.css"
+    "dev": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "prod": "cross-env NODE_ENV=production postcss css/tailwind.css -o public/build/tailwind.css"
   }
 }
