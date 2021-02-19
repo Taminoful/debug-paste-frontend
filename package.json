@@ -1,11 +1,13 @@
 {
   "name": "@taminoful/debug-paste-frontend",
   "description": "A simple semantic website frontend for debug pastes.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "keywords": [
     "debug",
     "semantic",
-    "eldoria"
+    "eldoria",
+    "vite",
+    "tailwindcss"
   ],
   "author": {
     "name": "Robin C",
@@ -22,18 +24,15 @@
     "type": "git",
     "url": "https://github.com/Taminoful/debug-paste-frontend.git"
   },
-  "dependencies": {
-    "autoprefixer": "^10.2.1",
-    "tailwindcss": "^2.0.2"
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "cssnano": "^4.1.10",
-    "postcss": "^8.2.4",
-    "postcss-cli": "^8.3.1"
-  },
-  "scripts": {
-    "dev": "postcss css/tailwind.css -o public/build/tailwind.css",
-    "prod": "cross-env NODE_ENV=production postcss css/tailwind.css -o public/build/tailwind.css"
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.6",
+    "tailwindcss": "^2.0.3",
+    "vite": "^2.0.1"
   }
 }
