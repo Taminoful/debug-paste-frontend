@@ -1,7 +1,7 @@
 {
   "name": "@taminoful/debug-paste-frontend",
   "description": "A simple semantic website frontend for debug pastes.",
-  "version": "1.2.2",
+  "version": "1.3.2",
   "keywords": [
     "debug",
     "semantic",
